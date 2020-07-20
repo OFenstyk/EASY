@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal projects of Oleksandr Fentsyk." />
+  <meta name="keywords" content="scroll, html, css, website, javascript, web design, frontend, oleksandr fentsyk, fentsyk, easy" />
+  <meta name="author" content="EASY" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="stylesheet" href="https://use.typekit.net/ljn4kgu.css">
+  <link rel="manifest" href="./img/site.webmanifest">
+  <link rel="stylesheet" href="https://use.typekit.net/rtr2vsr.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/animate.css"/>
+  
+  <title>EASY</title>
+</head>
+
+
+
+<body>
+  <div class="preloader">
+    <div class="counter">0</div>
+  </div>
+
+  <header class="header container animated slideInDown delay-3s">
+    <h1> Easy </h1>
+</header>
+  <div class="hero__outer container">
+
+    <div class="hero">
+
+       <div class="Menu animated slideInUp delay-3s">
+        <h2>Projects</h2>
+      <main class="loop js-loopContainer">
+        <ul class="Menu-list" data-offset="10">
+          <section class="js-loopItem">
+          <li class="Menu-list-item" data-fx="14" data-offset="20" onclick>
+            <a href="https://ofenstyk.github.io/ALEXPRIEST/" data-img="img/6.jpg,img/6.jpg,img/6.jpg"> Alex Priest
+            <span class="Mask"><span>Alex Priest</span></span>
+            <span class="Mask"><span>Alex Priest</span></span>
+          </a>
+          </li>
+        </section>
+          <section class="js-loopItem">
+          <li class="Menu-list-item" data-fx="14" data-offset="20" onclick>
+            <a href="https://ofenstyk.github.io/Timber/" data-img="img/1.jpg,img/2.jpg,img/3.jpg">Timber Tours
+            <span class="Mask"><span>Timber Tours</span></span>
+            <span class="Mask"><span>Timber Tours</span></span>
+            </a>
+          </li>
+        </section>
+          <section class="js-loopItem">
+          <li class="Menu-list-item" data-fx="14" data-offset="20" onclick>
+            <a href="https://ofenstyk.github.io/Collage/" data-img="img/4.jpg,img/5.jpg,img/7.jpg">Collage Art
+            <span class="Mask"><span>Collage Art</span></span>
+            <span class="Mask"><span>Collage Art</span></span>
+            </a>
+          </li>
+        </section>
+          <section class="js-loopItem">
+          <li class="Menu-list-item" data-fx="14" data-offset="20" onclick>
+            <a data-img="img/8.jpg,img/8.jpg,img/8.jpg">
+            Section
+            <span class="Mask"><span>Section</span></span>
+            <span class="Mask"><span>Section</span></span>
+            </a>
+          </li>
+        </section>
+          <section class="js-loopItem">
+          <li class="Menu-list-item" data-fx="14" data-offset="20" onclick>
+            <a data-img="img/8.jpg,img/8.jpg,img/8.jpg">
+            In Progress
+            <span class="Mask"><span>In Progress</span></span>
+            <span class="Mask"><span>In Progress</span></span>
+            </a>
+          </li>
+        </section>
+          
+      
+        </ul>
+
+      </main>
+
+    </div>
+
+      <div class="demonstrate">
+        <div class="wrapper">
+          <div class="message"></div>
+        </div>
+      </div>
+
+      <div class="Menu animated slideInUp delay-3s">
+        <h2>What's up?</h2>
+        <div class="loop js-loopContainer">
+        <ul class="Menu-list" data-offset="10">
+          <section class="js-loopItem">
+          <li class="Menu-list-item" >
+             <a href="https://www.linkedin.com/in/oleksandr-fentsyk-979556199/">Linkedin
+            <span class="Mask"><span>Linkedin</span></span>
+            <span class="Mask"><span>Linkedin</span></span>
+             </a>
+          </li>
+          </section>
+          <section class="js-loopItem">
+          <li class="Menu-list-item" >
+             <a href="https://www.instagram.com/fentsyk/">Instagram
+            <span class="Mask"><span>Instagram</span></span>
+            <span class="Mask"><span>Instagram</span></span>
+             </a>
+          </li>
+        </section>
+        <section class="js-loopItem">
+          <li class="Menu-list-item">
+             <a href="https://github.com/OFenstyk">Github
+            <span class="Mask"><span>Github</span></span>
+            <span class="Mask"><span>Github</span></span>
+             </a>
+          </li>
+        </section>
+        <section class="js-loopItem">
+          <li class="Menu-list-item" >
+             <a href="easy.frontend.dev@gmail.com">Contact
+            <span class="Mask"><span>Contact</span></span>
+            <span class="Mask"><span>Contact</span></span>
+             </a>
+          </li>
+        </section>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+
+  </footer>
+
+
+ 
+
+  <script type="text/javascript">
+    function counter(){
+      var count = setInterval(function(){
+        var c = parseInt($('.counter').text());
+        $('.counter').text((++c).toString());
+        if (c == 100){
+          clearInterval(count);
+          $('.counter').addClass('hide')
+          $('.preloader').addClass('active')
+        }
+      })
+    }
+    counter()
+    </script>
+  <script src="./js/libs.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+ 
+  <script src="./js/infinitemenu.js"></script>
+  <script src="js/charming.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="./js/TweenMax.min.js"></script>
+		<script src="./js/demo.js"></script>
+
+    
+
+
+</body>
+
+</html>
